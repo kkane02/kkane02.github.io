@@ -11,29 +11,39 @@
   </head>
 
   <body>
+  <nav>
 
-    <ul>
-  <li><a href="#a1">preface</a></li>
-  <li><a href="#a2">one</a></li>
-  <li><a href="#a3">two</a></li>
-  <li><a href="#a4">three</a></li>
-  <li><a href="#a5">four</a></li>
-  <li><a href="#a6">five</a></li>
-  <li><a href="#a7">six</a></li>
-  <li><a href="#a8">seven</a></li>
-  <li><a href="#a9">eight</a></li>
-  <li><a href="#a10">nine</a></li>
-  <li><a href="#a11">ten</a></li>
-  <li><a href="#a12">eleven</a></li>
-  <li><a href="#a13">twelve</a></li>
-  <li><a href="#a14">thirteen</a></li>
-  <li><a href="#a15">fourteen</a></li>
-  <li><a href="#a16">fifteen</a></li>
-  <li><a href="#a17">epiloge</a></li>
-  </ul>
+    <ul class="topnav">
+      <li><a href="#a0">home</a></li>
+      <li><a href="#a1">preface</a></li>
+      <li><a href="#a2">one</a></li>
+      <li><a href="#a3">two</a></li>
+      <li><a href="#a4">three</a></li>
+      <li><a href="#a5">four</a></li>
+      <li><a href="#a6">five</a></li>
+      <li><a href="#a7">six</a></li>
+      <li><a href="#a8">seven</a></li>
+      <li><a href="#a9">eight</a></li>
+      <li><a href="#a10">nine</a></li>
+      <li><a href="#a11">ten</a></li>
+      <li><a href="#a12">eleven</a></li>
+      <li><a href="#a13">twelve</a></li>
+      <li><a href="#a14">thirteen</a></li>
+      <li><a href="#a15">fourteen</a></li>
+      <li><a href="#a16">fifteen</a></li>
+      <li><a href="#a17">epiloge</a></li>
+    </ul>
+    <button class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+    </button>
+  </nav>
+
     <!-- https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm -->
     <article>
-      <header class="col-10 col-offset-1">
+      <header id="a0" class="col-10 col-offset-1">
         <h1>The Work of Art in the Age of Mechanical Reproduction</h1>
         <p class="col-10">by Walter Benjamin (1936)</p>
       </header>
@@ -254,6 +264,25 @@
       </footer>
     </article>
 
+
   </body>
+
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+  $('button.toggle').click(function() {
+    $('nav ul').slideToggle();
+  });
+
+  $(window).resize(function() {
+    ww = $(window).width();
+
+    if (ww > 768) {
+      $('nav ul').show();
+    } else {
+      $('nav ul').hide();
+    };
+
+  });
+  </script>
 
 </html>
