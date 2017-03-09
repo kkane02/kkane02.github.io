@@ -151,30 +151,6 @@ nav button.toggle {
         background: lightgray;
 	}
 
-	ul.dropdown {
-		list-style-type: none;
-	    margin: 0;
-	    padding: auto;
-	    overflow: hidden;
-	    background-color: #333;
-	    position: absolute;
-	    top: 0;
-	    width: 100%;
-	    font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
-	    font-weight:200;
-	}
-
-	li a {
-	    display: block;
-	    color: white;
-	    text-align: center;
-	    padding: 14px 16px;
-	    text-decoration: none;
-
-	}
-
-	     
-
 
 
 /** columns **/
