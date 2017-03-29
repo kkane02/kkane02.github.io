@@ -150,7 +150,9 @@ nav button.toggle {
     nav button.toggle:active span {
         background: lightgray;
 	}
-
+nav {
+	position: fixed;
+}
 	
 
 /** columns **/
